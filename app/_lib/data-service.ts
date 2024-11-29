@@ -1,4 +1,3 @@
-
 import { Product } from "../_models/product";
 import { Shop } from "../_models/shop";
 
@@ -6,7 +5,7 @@ const BASE_URL = process.env.BASE_URL;
 
 export async function getProducts(query: string) {
   try {
-    const response = await fetch(`${BASE_URL}/products`, {
+    const response = await fetch(`${BASE_URL}/products?name=${query}`, {
       headers: {
         "Content-Type": "application/json",
       },
@@ -46,7 +45,7 @@ export async function getProduct(productId: number): Promise<Product | null> {
 
 export async function getShops(query: string) {
   try {
-    const response = await fetch(`${BASE_URL}/shops`, {
+    const response = await fetch(`${BASE_URL}/shops/?name=${query}`, {
       headers: {
         "Content-Type": "application/json",
       },

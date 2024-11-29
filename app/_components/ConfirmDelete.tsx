@@ -3,15 +3,9 @@
 import toast from "react-hot-toast";
 import { useModal } from "../_context/ModalContext";
 import {
-  deactivateAccount,
-  deleteBranch,
-  deleteCategory,
-  deleteDivision,
   deleteProduct,
-  deleteShop,
-  logOut,
+  deleteShop
 } from "../_lib/actions";
-import { useRouter } from "next/navigation";
 
 interface ConfirmDeleteProps {
   resourceName: string;
@@ -20,22 +14,11 @@ interface ConfirmDeleteProps {
 }
 
 function ConfirmDelete({ resourceName, id, name }: ConfirmDeleteProps) {
-
-  const router = useRouter();
   const { close } = useModal();
   const handleDelete = async () => {
     try {
-      if (resourceName === "Category") await deleteCategory(id);
-      if (resourceName === "Division") await deleteDivision(id);
       if (resourceName === "Shop") await deleteShop(id);
-      if (resourceName === "Branch") await deleteBranch(id);
       if (resourceName === "Product") await deleteProduct(id);
-
-      if (resourceName === "Account") {
-        await deactivateAccount(id);
-        await logOut();
-        router.push("/hawkvisilogin");
-      }
       close();
       toast.success(`${resourceName} Deleted successfully`);
     } catch (error) {

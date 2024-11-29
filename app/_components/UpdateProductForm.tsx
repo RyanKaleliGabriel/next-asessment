@@ -47,19 +47,18 @@ function UpdateProductForm({ product }: UpdateProductProps) {
         />
       </div>
      
-
       <hr className="border-gray-100 my-1" />
       <div className="flex lg:flex-row flex-col lg:items-center justify-start my-4">
         <label
-          htmlFor="image"
+          htmlFor="photo"
           className="text-sm text-gray-500 mb-1 lg:w-[23%]"
         >
           Product Photo
         </label>
         <input
           type="file"
-          name="image_url"
-          id="image_url"
+          name="photo"
+          id="photo"
           className="custom-file py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 mx-auto"
         />
         <p className="text-sm text-gray-500 mb-1">
@@ -90,7 +89,7 @@ function UpdateProductForm({ product }: UpdateProductProps) {
       <hr className="border-gray-100 my-1" />
       <div className="flex lg:flex-row flex-col lg:items-center justify-start my-4">
         <label
-          htmlFor="discount"
+          htmlFor="stock_level"
           className="text-sm text-gray-500 mb-1 lg:w-[23%]"
         >
           Stock Level
@@ -98,10 +97,10 @@ function UpdateProductForm({ product }: UpdateProductProps) {
         <input
           defaultValue={formState.stock_level}
           onChange={(e) =>
-            setFormState({ ...formState, discount: parseInt(e.target.value) })
+            setFormState({ ...formState, stock_level: parseInt(e.target.value) })
           }
-          id="discount"
-          name="discount"
+          id="stock_level"
+          name="stock_level"
           type="number"
           placeholder="5"
           className="border rounded-md py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 mx-auto"

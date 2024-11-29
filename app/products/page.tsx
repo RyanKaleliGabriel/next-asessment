@@ -4,7 +4,6 @@ import SortBy from "@/app/_components/SortBy";
 import TableContexts from "@/app/_components/TableContexts";
 import { getProducts } from "@/app/_lib/data-service";
 import Link from "next/link";
-import FilterByManufacturer from "../_components/FilterByManufacturer";
 
 async function page({ searchParams }: any) {
   const query = searchParams?.query ?? "";
@@ -18,7 +17,6 @@ async function page({ searchParams }: any) {
         </div>
 
         <div className="flex lg:flex-row flex-col gap-5 text-gray-600 text-sm lg:items-center">
-          {/* <FilterByManufacturer manufacturers={manufacturers} /> */}
           <SortBy
             options={[
               { value: "price-asc", label: "Price(low first)" },

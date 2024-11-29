@@ -18,8 +18,6 @@ export const colors_Bar = [
   "#FFBB28",
   "#b91c1c",
   "#36A2EB",
-
-
   "#FF6384",
   "#111827",
   "#ef4444",

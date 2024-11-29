@@ -20,9 +20,9 @@
     },
     {
       "id": "ea52",
-      "name": "demo",
-      "description": "demo descr",
-      "logo": "Screenshot from 2024-10-23 09-45-37.png"
+      "name": "Real shop",
+      "description": "Real description",
+      "logo": "Screenshot from 2024-11-23 12-04-12.png"
     }
   ],
   "products": [
@@ -30,7 +30,7 @@
       "id": "1",
       "name": "Smartphone X",
       "photo": "https://via.placeholder.com/150?text=Smartphone+X",
-      "stock_level": 50,
+      "stock_level": 4,
       "price": 85000,
       "shop_id": "1"
     },
@@ -46,7 +46,7 @@
       "id": "3",
       "name": "Laptop Pro",
       "photo": "https://via.placeholder.com/150?text=Laptop+Pro",
-      "stock_level": 20,
+      "stock_level": 0,
       "price": 120000,
       "shop_id": "1"
     },
@@ -54,7 +54,7 @@
       "id": "4",
       "name": "Smartwatch",
       "photo": "https://via.placeholder.com/150?text=Smartwatch",
-      "stock_level": 40,
+      "stock_level": 2,
       "price": 30000,
       "shop_id": "1"
     },
@@ -142,7 +142,7 @@
       "id": "15",
       "name": "Winter Coat",
       "photo": "https://via.placeholder.com/150?text=Winter+Coat",
-      "stock_level": 10,
+      "stock_level": 0,
       "price": 18000,
       "shop_id": "2"
     },
@@ -190,7 +190,7 @@
       "id": "21",
       "name": "Kitchen Blender",
       "photo": "https://via.placeholder.com/150?text=Kitchen+Blender",
-      "stock_level": 15,
+      "stock_level": 0,
       "price": 4500,
       "shop_id": "3"
     },

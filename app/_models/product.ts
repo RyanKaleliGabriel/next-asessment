@@ -10,6 +10,15 @@ export interface Product {
   stock_level: number;
   price: number;
   photo: string;
+  shop_id: number;
+}
+
+export interface Prod {
+  name?: string;
+  stock_level?: number;
+  price?: number;
+  photo?: string;
+  shop_id?: number;
 }
 // export interface Prod {
 //   id: number;
@@ -48,8 +57,8 @@ export interface ProductTableProps {
   searchParams: any;
   products: Product[];
 }
-export interface ProductArray2{
-  products:Product[]
+export interface ProductArray2 {
+  products: Product[];
 }
 
 // export interface ProductArray {

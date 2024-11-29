@@ -12,9 +12,6 @@ async function page() {
       </div>
       <DashStats />
       <Charts />
-      <div className="my-8">
-        <DashLatestProducts />
-      </div>
     </>
   );
 }

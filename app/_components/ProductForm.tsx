@@ -1,15 +1,18 @@
 "use client";
 
 import { createProduct } from "../_lib/actions";
+import { Shops } from "../_models/shop";
 import useFormSubmit from "../hooks/useFormSubmit";
 import { showToast } from "../hooks/useToast";
+import NoDataDropDown from "./NoDataDropDown";
 import SubmitButton from "./SubmitButton";
 
-function ProductForm() {
+function ProductForm({shops}:Shops) {
   const initialState = {
     name: "",
     price: "",
     stock_level: "",
+    shop_id:""
   };
 
   const { isSubmitting, formState, setFormState, handleSubmit } = useFormSubmit(
@@ -30,7 +33,7 @@ function ProductForm() {
           onChange={(e) => setFormState({ ...formState, name: e.target.value })}
           name="name"
           id="name"
-          placeholder="1 MP Fixed Indoor Turret Camera"
+          placeholder="Smartphone X"
           type="text"
           className="border rounded-md py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto"
         />
@@ -39,34 +42,45 @@ function ProductForm() {
       <hr className="border-gray-100 my-1" />
       <div className="flex lg:flex-row flex-col lg:items-center justify-start my-4">
         <label
-          htmlFor="description"
+          htmlFor="shop_id"
           className="text-sm text-gray-500 mb-1 w-[23%]"
         >
-          Customer Description
+          Select Shop
         </label>
-        <textarea
-          name="cDescription"
-          id="cDescription"
-          value={formState.cDescription}
-          onChange={(e) =>
-            setFormState({ ...formState, cDescription: e.target.value })
-          }
-          placeholder="Decsription..."
-          cols={22}
-          rows={5}
-          className="border rounded-md  py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto"
-        ></textarea>
+        {shops.length > 0 ? (
+          <select
+            name="shop_id"
+            id="shop_id"
+            value={formState.shop_id}
+            onChange={(e) =>
+              setFormState({
+                ...formState,
+                shop_id: parseInt(e.target.value),
+              })
+            }
+            className="bg-white border rounded-md  py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto lg:w-[32%]"
+          >
+            <option disabled>Choose Shop</option>
+            {shops.map((shop) => (
+              <option value={shop.id} key={shop.id}>
+                {shop.name}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <NoDataDropDown href="shops" model="shops" />
+        )}
       </div>
 
       <hr className="border-gray-100 my-1" />
       <div className="flex lg:flex-row flex-col lg:items-center justify-start my-4">
-        <label htmlFor="image" className="text-sm text-gray-500 mb-1 w-[23%]">
+        <label htmlFor="photo" className="text-sm text-gray-500 mb-1 w-[23%]">
           Product Photo
         </label>
         <input
           type="file"
-          name="image_url"
-          id="image_url"
+          name="photo"
+          id="photo"
           className="custom-file py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto"
         />
       </div>
@@ -101,8 +115,8 @@ function ProductForm() {
           onChange={(e) =>
             setFormState({ ...formState, discount: e.target.value })
           }
-          id="discount"
-          name="discount"
+          id="stock_level"
+          name="stock_level"
           type="number"
           placeholder="5"
           className="border rounded-md py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto"

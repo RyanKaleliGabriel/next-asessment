@@ -1,6 +1,6 @@
 "use client";
 
-import { updateManufacturer } from "../_lib/actions";
+import { updateShop } from "../_lib/actions";
 import { UpdateShopProps } from "../_models/shop";
 import useFormSubmit from "../hooks/useFormSubmit";
 import { showToast } from "../hooks/useToast";
@@ -11,10 +11,10 @@ function UpdateShopForm({ shop }: UpdateShopProps) {
   const initialState = {
     name,
     description,
-    logo
+    logo,
   };
   const { isSubmitting, formState, setFormState, handleSubmit } = useFormSubmit(
-    updateManufacturer,
+    updateShop,
     "Shop updated successfully!",
     initialState,
     showToast
@@ -40,16 +40,40 @@ function UpdateShopForm({ shop }: UpdateShopProps) {
           className="border rounded-md py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto"
         />
       </div>
+      <hr className="border-gray-100 my-1" />
+      <div className="flex lg:flex-row flex-col lg:items-center justify-start my-4">
+        <label
+          htmlFor="description"
+          className="text-sm text-gray-500 mb-1 lg:w-[23%]"
+        >
+          Description
+        </label>
+        <textarea
+          name="description"
+          id="description"
+          defaultValue={formState.description}
+          onChange={(e) =>
+            setFormState({ ...formState, description: e.target.value })
+          }
+          placeholder="Decsription..."
+          cols={22}
+          rows={5}
+          className="border rounded-md  py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 mx-auto"
+        ></textarea>
+      </div>
 
       <hr className="border-gray-100 my-1" />
       <div className="flex lg:flex-row flex-col lg:items-center justify-start my-4">
-        <label htmlFor="image" className="text-sm text-gray-500 mb-1 lg:w-[23%]">
+        <label
+          htmlFor="image"
+          className="text-sm text-gray-500 mb-1 lg:w-[23%]"
+        >
           Shop Logo
         </label>
         <input
-          name="image_url"
+          name="logo"
           type="file"
-          id="image_url"
+          id="logo"
           className="custom-file py-2 px-2 focus:outline-primary-500 text-sm text-gray-700 lg:mx-auto"
         />
         <input

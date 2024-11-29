@@ -26,7 +26,7 @@ function DashSide() {
   return (
     <aside className="h-screen flex flex-col  py-12 px-8 ">
       <div className="flex justify-center">
-        <Link href="/hawkvisi">
+        <Link href="/">
           <Logo />
         </Link>
       </div>
@@ -35,17 +35,17 @@ function DashSide() {
         <div className="">
           <div
             className={`py-2 px-2 rounded-md flex my-7 items-center gap-5 hover:text-primary-600 hover:bg-gray-100 duration-300 transition-all ease-in-out ${
-              pathname === "/hawkvisi" ? "bg-gray-100" : ""
+              pathname === "/" ? "bg-gray-100" : ""
             }`}
           >
             <i
               className={`w-5 h-5 ${
-                pathname === "/hawkvisi" ? "text-primary-600 " : ""
+                pathname === "/" ? "text-primary-600 " : ""
               }`}
             >
               <HomeIcon />
             </i>
-            <Link href="/hawkvisi" className="text-sm text-gray-500">
+            <Link href="/" className="text-sm text-gray-500">
               Home
             </Link>
           </div>

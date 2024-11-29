@@ -42,7 +42,7 @@ function ProductTable({ searchParams, products }: ProductTableProps) {
         <thead>
           <tr className=" text-[15px]">
             <th> </th>
-            <th>Sr. No.</th>
+            <th>Id. No.</th>
             <th>Name</th>
             <th className="lg:table-cell hidden">Price</th>
             <th className="lg:table-cell hidden">Stock</th>
@@ -67,37 +67,28 @@ function ProductTable({ searchParams, products }: ProductTableProps) {
                 </td>
                 <td>{product.id}</td>
                 <td>{DashProdName(product.name)}</td>
-                
-                {/* <td className="lg:table-cell hidden">
-                  {product.manufacturer.name}
-                </td>
-                <td className="lg:table-cell hidden">
-                  {product.category.name}
-                </td> */}
                 <td className="lg:table-cell hidden">{product.price}</td>
                 <td className="lg:table-cell hidden">{product.stock_level}</td>
 
-
-                <td className="lg:table-cell hidden">
+                <td>
                   <MenuToggle id={product.id} />
                   <MenuList id={product.id}>
                     <div className="flex items-center text-sm gap-4 px-4 py-2 w-full hover:bg-gray-200 transition-all ease-in-out ">
                       <PencilIcon className="w-4 h-4" />
-                      <Link href={`/products/${product.id}`}>
-                        Edit
-                      </Link>
+                      <Link href={`/products/${product.id}`}>Edit</Link>
                     </div>
                     <ModalOpen opens={`delete-${product.id}`}>
-                      <MenuButton icon={<TrashIcon className="w-4 h-4" />}>
+                      <button className="flex items-center text-sm gap-4 px-4 py-2 w-full hover:bg-gray-200 transition-all ease-in-out ">
+                        <TrashIcon className="w-4 h-4" />
                         Delete
-                      </MenuButton>
+                      </button>
                     </ModalOpen>
                   </MenuList>
                   <ModalWindow name={`delete-${product.id}`}>
                     <ConfirmDelete
                       resourceName="Product"
-                      id={product.id}
                       name={product.name}
+                      id={product.id}
                     />
                   </ModalWindow>
                 </td>

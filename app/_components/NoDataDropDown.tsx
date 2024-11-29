@@ -7,7 +7,7 @@ function NoDataDropDown({ href, model }: NoDataDropDownProps) {
       <p className="text-sm text-gray-400 my-2">No {model} available</p>
       <Link
         className="bg-primary-600 text-white text-sm py-1 px-2 rounded-md"
-        href={`/hawkvisi/${href}/add`}
+        href={`/${href}/add`}
       >
         Add new
       </Link>

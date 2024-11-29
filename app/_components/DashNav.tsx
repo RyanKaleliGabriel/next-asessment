@@ -16,7 +16,7 @@ async function DashNav() {
     <div className=" px-5 py-4 shadow-sm bg-white">
       <div className=" flex items-center justify-end gap-3 ">
         <div className="mr-auto lg:hidden inline">
-          <Link href="/hawkvisi">
+          <Link href="/">
             <Logo />
           </Link>
         </div>
