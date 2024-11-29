@@ -1,0 +1,273 @@
+{
+  "shops": [
+    {
+      "id": "1",
+      "name": "Tech Haven",
+      "description": "Your one-stop shop for the latest gadgets and tech.",
+      "logo": "https://via.placeholder.com/150?text=Tech+Haven"
+    },
+    {
+      "id": "2",
+      "name": "Fashion Hub",
+      "description": "Trendy apparel and accessories for every season.",
+      "logo": "https://via.placeholder.com/150?text=Fashion+Hub"
+    },
+    {
+      "id": "3",
+      "name": "Home Essentials",
+      "description": "Quality items to make your house a home.",
+      "logo": "https://via.placeholder.com/150?text=Home+Essentials"
+    },
+    {
+      "id": "ea52",
+      "name": "demo",
+      "description": "demo descr",
+      "logo": "Screenshot from 2024-10-23 09-45-37.png"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone X",
+      "photo": "https://via.placeholder.com/150?text=Smartphone+X",
+      "stock_level": 50,
+      "price": 85000,
+      "shop_id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Earbuds",
+      "photo": "https://via.placeholder.com/150?text=Wireless+Earbuds",
+      "stock_level": 30,
+      "price": 7000,
+      "shop_id": "1"
+    },
+    {
+      "id": "3",
+      "name": "Laptop Pro",
+      "photo": "https://via.placeholder.com/150?text=Laptop+Pro",
+      "stock_level": 20,
+      "price": 120000,
+      "shop_id": "1"
+    },
+    {
+      "id": "4",
+      "name": "Smartwatch",
+      "photo": "https://via.placeholder.com/150?text=Smartwatch",
+      "stock_level": 40,
+      "price": 30000,
+      "shop_id": "1"
+    },
+    {
+      "id": "5",
+      "name": "Gaming Console",
+      "photo": "https://via.placeholder.com/150?text=Gaming+Console",
+      "stock_level": 10,
+      "price": 65000,
+      "shop_id": "1"
+    },
+    {
+      "id": "6",
+      "name": "Tablet Max",
+      "photo": "https://via.placeholder.com/150?text=Tablet+Max",
+      "stock_level": 25,
+      "price": 50000,
+      "shop_id": "1"
+    },
+    {
+      "id": "7",
+      "name": "Bluetooth Speaker",
+      "photo": "https://via.placeholder.com/150?text=Bluetooth+Speaker",
+      "stock_level": 15,
+      "price": 15000,
+      "shop_id": "1"
+    },
+    {
+      "id": "8",
+      "name": "Action Camera",
+      "photo": "https://via.placeholder.com/150?text=Action+Camera",
+      "stock_level": 8,
+      "price": 45000,
+      "shop_id": "1"
+    },
+    {
+      "id": "9",
+      "name": "Portable Charger",
+      "photo": "https://via.placeholder.com/150?text=Portable+Charger",
+      "stock_level": 50,
+      "price": 3000,
+      "shop_id": "1"
+    },
+    {
+      "id": "10",
+      "name": "4K Monitor",
+      "photo": "https://via.placeholder.com/150?text=4K+Monitor",
+      "stock_level": 12,
+      "price": 75000,
+      "shop_id": "1"
+    },
+    {
+      "id": "11",
+      "name": "Designer Jacket",
+      "photo": "https://via.placeholder.com/150?text=Designer+Jacket",
+      "stock_level": 20,
+      "price": 12000,
+      "shop_id": "2"
+    },
+    {
+      "id": "12",
+      "name": "Leather Boots",
+      "photo": "https://via.placeholder.com/150?text=Leather+Boots",
+      "stock_level": 15,
+      "price": 10000,
+      "shop_id": "2"
+    },
+    {
+      "id": "13",
+      "name": "Silk Scarf",
+      "photo": "https://via.placeholder.com/150?text=Silk+Scarf",
+      "stock_level": 25,
+      "price": 5000,
+      "shop_id": "2"
+    },
+    {
+      "id": "14",
+      "name": "Cotton Shirt",
+      "photo": "https://via.placeholder.com/150?text=Cotton+Shirt",
+      "stock_level": 30,
+      "price": 3000,
+      "shop_id": "2"
+    },
+    {
+      "id": "15",
+      "name": "Winter Coat",
+      "photo": "https://via.placeholder.com/150?text=Winter+Coat",
+      "stock_level": 10,
+      "price": 18000,
+      "shop_id": "2"
+    },
+    {
+      "id": "16",
+      "name": "Denim Jeans",
+      "photo": "https://via.placeholder.com/150?text=Denim+Jeans",
+      "stock_level": 40,
+      "price": 8000,
+      "shop_id": "2"
+    },
+    {
+      "id": "17",
+      "name": "Wool Sweater",
+      "photo": "https://via.placeholder.com/150?text=Wool+Sweater",
+      "stock_level": 18,
+      "price": 10000,
+      "shop_id": "2"
+    },
+    {
+      "id": "18",
+      "name": "Sports Shoes",
+      "photo": "https://via.placeholder.com/150?text=Sports+Shoes",
+      "stock_level": 22,
+      "price": 12000,
+      "shop_id": "2"
+    },
+    {
+      "id": "19",
+      "name": "Evening Dress",
+      "photo": "https://via.placeholder.com/150?text=Evening+Dress",
+      "stock_level": 5,
+      "price": 25000,
+      "shop_id": "2"
+    },
+    {
+      "id": "20",
+      "name": "Casual T-Shirt",
+      "photo": "https://via.placeholder.com/150?text=Casual+T-Shirt",
+      "stock_level": 35,
+      "price": 2000,
+      "shop_id": "2"
+    },
+    {
+      "id": "21",
+      "name": "Kitchen Blender",
+      "photo": "https://via.placeholder.com/150?text=Kitchen+Blender",
+      "stock_level": 15,
+      "price": 4500,
+      "shop_id": "3"
+    },
+    {
+      "id": "22",
+      "name": "Vacuum Cleaner",
+      "photo": "https://via.placeholder.com/150?text=Vacuum+Cleaner",
+      "stock_level": 10,
+      "price": 15000,
+      "shop_id": "3"
+    },
+    {
+      "id": "23",
+      "name": "Microwave Oven",
+      "photo": "https://via.placeholder.com/150?text=Microwave+Oven",
+      "stock_level": 20,
+      "price": 12000,
+      "shop_id": "3"
+    },
+    {
+      "id": "24",
+      "name": "Electric Kettle",
+      "photo": "https://via.placeholder.com/150?text=Electric+Kettle",
+      "stock_level": 50,
+      "price": 3000,
+      "shop_id": "3"
+    },
+    {
+      "id": "25",
+      "name": "Coffee Maker",
+      "photo": "https://via.placeholder.com/150?text=Coffee+Maker",
+      "stock_level": 12,
+      "price": 8000,
+      "shop_id": "3"
+    },
+    {
+      "id": "26",
+      "name": "Pressure Cooker",
+      "photo": "https://via.placeholder.com/150?text=Pressure+Cooker",
+      "stock_level": 18,
+      "price": 9500,
+      "shop_id": "3"
+    },
+    {
+      "id": "27",
+      "name": "Air Purifier",
+      "photo": "https://via.placeholder.com/150?text=Air+Purifier",
+      "stock_level": 8,
+      "price": 18000,
+      "shop_id": "3"
+    },
+    {
+      "id": "28",
+      "name": "Dish Rack",
+      "photo": "https://via.placeholder.com/150?text=Dish+Rack",
+      "stock_level": 25,
+      "price": 2000,
+      "shop_id": "3"
+    },
+    {
+      "id": "29",
+      "name": "Set of Bowls",
+      "photo": "https://via.placeholder.com/150?text=Set+of+Bowls",
+      "stock_level": 30,
+      "price": 3500,
+      "shop_id": "3"
+    },
+    {
+      "id": "30",
+      "name": "Ironing Board",
+      "photo": "https://via.placeholder.com/150?text=Ironing+Board",
+      "stock_level": 10,
+      "price": 7000,
+      "shop_id": "3"
+    }
+  ],
+  "profile": {
+    "name": "Mock User"
+  }
+}
