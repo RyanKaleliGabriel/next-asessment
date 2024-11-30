@@ -9,11 +9,18 @@ git clone https://github.com/RyanKaleliGabriel/next-asessment.git
 
 ```
 
+Install the dependencies :
+
+```bash
+ npm install
+```
+
 Create a .env file and add the base url of the json server:
 
 ```bash
 BASE_URL=http://localhost:3001
 ```
+
 Run the app:
 
 ```bash
