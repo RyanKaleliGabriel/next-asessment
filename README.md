@@ -12,19 +12,12 @@ git clone https://github.com/RyanKaleliGabriel/next-asessment.git
 Create a .env file and add the base url of the json server:
 
 ```bash
-BASE_URL=http://localhost:3000
+BASE_URL=http://localhost:3001
 ```
-
-Run the json server (will run in port 3000):
+Run the app:
 
 ```bash
-npx json-server db.json
-```
-
-Run the development server (will run in port 3001):
-
-```bash
-npm run dev
+ npm run start:mock & npm run dev
 ```
 ## A description of the platform and its features.
 - Shop Management. All CRUD operations.
