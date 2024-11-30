@@ -1,4 +1,3 @@
-import { Product } from "@prisma/client";
 
 import { ReactNode } from "react";
 
@@ -18,10 +17,6 @@ export interface SortOptionsProps {
   value?: any;
 }
 
-export interface DashStatsProps {
-  products: Product[];
-
-}
 
 export interface SubmitButtonProps {
   children: ReactNode;

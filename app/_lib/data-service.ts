@@ -43,7 +43,7 @@ export async function getProduct(productId: number): Promise<Product | null> {
   }
 }
 
-export async function getShops(query: string) {
+export async function getShops(query: string ) {
   try {
     const response = await fetch(`${BASE_URL}/shops/?name=${query}`, {
       headers: {

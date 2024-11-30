@@ -2,7 +2,8 @@ import ProductForm from "@/app/_components/ProductForm";
 import { getProducts, getShops } from "@/app/_lib/data-service";
 
 async function page() {
-  const shops = await getShops();
+  const query =""
+  const shops = await getShops(query);
   return (
     <div className="bg-white py-4 px-6 shadow-sm rounded-md">
       <div>
