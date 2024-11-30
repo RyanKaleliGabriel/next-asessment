@@ -1,7 +1,7 @@
 import MenuButton from "@/app/_components/MenuButton";
 import MenuList from "@/app/_components/MenuList";
 import MenuToggle from "@/app/_components/MenuToggle";
-import { DashProdName, ProductSerialNo } from "@/app/_utils/Product";
+import { DashProdName} from "@/app/_utils/Product";
 import Image from "next/image";
 
 import { PencilIcon, TrashIcon } from "@heroicons/react/24/solid";
