@@ -13,42 +13,20 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useDashSide } from "../_context/DashSideContext";
 import { useOutsideClick } from "../hooks/useOutsideClick";
-import LogOutLink from "./LogOutLink";
+
 
 const links = [
   {
     name: "Products",
     icon: <CircleStackIcon />,
-    url: "/hawkvisi/products",
+    url: "/products",
   },
   {
-    name: "Category",
+    name: "Shops",
     icon: <RectangleGroupIcon />,
-    url: "/hawkvisi/category",
+    url: "/shops",
   },
-  {
-    name: "Category Division",
-    icon: <RectangleStackIcon />,
-    url: "/hawkvisi/division",
-  },
-  {
-    name: "Manufacturers",
-    icon: <BuildingOffice2Icon />,
-    url: "/hawkvisi/manufacturer",
-  },
-  {
-    name: "Branches",
-    icon: <GlobeAmericasIcon />,
-    url: "/hawkvisi/branches",
-  },
-];
 
-const linkstwo = [
-  {
-    name: "Admins",
-    icon: <UserIcon />,
-    url: "/hawkvisi/admins",
-  },
 ];
 
 function DashSideMenu() {
@@ -96,36 +74,7 @@ function DashSideMenu() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-auto mb-[3rem]">
-        <div className="w-full">
-          {linkstwo.map((link) => (
-            <div
-              key={link.name}
-              className={`py-2 px-2 rounded-md flex my-7 items-center gap-5 hover:text-primary-600 hover:bg-gray-100 duration-300 transition-all ease-in-out ${
-                pathname === link.url || pathname.startsWith(link.url)
-                  ? "bg-gray-100"
-                  : ""
-              }`}
-            >
-              <i
-                className={`w-5 h-5 text-primary-400 ${
-                  pathname === link.url || pathname.startsWith(link.url)
-                    ? "text-primary-600 "
-                    : ""
-                }`}
-              >
-                {link.icon}
-              </i>
 
-                <Link href={link.url} className="text-sm text-gray-500">
-                  {link.name}
-                </Link>
-          
-            </div>
-          ))}
-          <LogOutLink />
-        </div>
-      </div>
     </aside>
   );
 }

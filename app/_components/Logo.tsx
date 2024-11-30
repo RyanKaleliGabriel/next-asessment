@@ -4,10 +4,10 @@ function Logo() {
   return (
 
       <Image
-        src="/website/logo.png"
+        src="/website/logo.jpg"
         width="80"
         height="80"
-        alt="HawkVision Logo"
+        alt="Company Logo"
         quality={100}
         className="mr-5"
       />

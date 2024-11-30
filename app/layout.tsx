@@ -17,8 +17,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s / HawkVision Technologies",
-    default: "Welcome / HawkVision Technologies",
+    template: "%s / Shop Yangu",
+    default: "Welcome / Shop Yangu",
   },
   description: "No. 1 National distributor of HikVision Products Countrywide.",
 };

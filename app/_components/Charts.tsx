@@ -15,7 +15,6 @@ async function Charts() {
     (product: Product) => product.stock_level < 5
   ).length;
 
-
   const data = [
     {
       name: "In Stock",
@@ -33,7 +32,6 @@ async function Charts() {
   return (
     <div className="flex lg:flex-row flex-col items-center justify-between gap-2">
       <StockChart data={data} />
-
     </div>
   );
 }

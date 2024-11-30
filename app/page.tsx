@@ -1,5 +1,4 @@
 import Charts from "./_components/Charts";
-import DashLatestProducts from "./_components/DashLatestProducts";
 import DashStats from "./_components/DashStats";
 
 async function page() {

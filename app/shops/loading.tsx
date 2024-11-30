@@ -4,7 +4,7 @@ function loading() {
   return (
     <div className="flex flex-col items-center justify-center">
       <Spinner />
-      <p className="text-lg text-gray-500">Loading Manufacturers data...</p>
+      <p className="text-lg text-gray-500">Loading Shops data...</p>
     </div>
   );
 }

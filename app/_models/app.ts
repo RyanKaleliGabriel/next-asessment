@@ -1,6 +1,5 @@
 import { Product } from "@prisma/client";
-import { Manufacturer } from "./manufacturer";
-import { Branch } from "./branch";
+
 import { ReactNode } from "react";
 
 export interface NoDataDropDownProps {
@@ -21,12 +20,7 @@ export interface SortOptionsProps {
 
 export interface DashStatsProps {
   products: Product[];
-  manufacturers: Manufacturer[];
-  branches: Branch[];
-}
 
-export interface DashProductsLatestProps {
-  products: Product[];
 }
 
 export interface SubmitButtonProps {
@@ -35,9 +29,6 @@ export interface SubmitButtonProps {
   isSubmitting: boolean;
 }
 
-export interface SocialCredentialsType {
-  auth_code: string;
-}
 
 export interface credentialsType {
   email: string;

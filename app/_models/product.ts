@@ -1,8 +1,5 @@
-import { TechnicalDescription } from "@prisma/client";
 import { ReactNode } from "react";
-import { Cat, Category } from "./category";
-import { Division } from "./division";
-import { Manufacturer } from "./manufacturer";
+
 
 export interface Product {
   id: number;
@@ -19,27 +16,6 @@ export interface Prod {
   price?: number;
   photo?: string;
   shop_id?: number;
-}
-// export interface Prod {
-//   id: number;
-//   name: string;
-//   serialNumber: string;
-//   cDescription: string;
-//   price: number;
-//   discount: number;
-//   image_url: string;
-//   display: string;
-//   divisionId: number;
-//   categoryId: number;
-//   manufacturerId: number;
-//   active: boolean;
-//   created_at: Date;
-// }
-
-export interface ProductFormProps {
-  divisions: Division[];
-  manufacturers: Manufacturer[];
-  categories: Cat[];
 }
 
 export interface UpdateProductProps {
@@ -61,19 +37,3 @@ export interface ProductArray2 {
   products: Product[];
 }
 
-// export interface ProductArray {
-//   products: Prod[];
-// }
-// export interface RelatedProductProps {
-//   product: Prod;
-// }
-
-export interface ProductParams {
-  cDescription: string;
-  name: string;
-  serialNumber: string;
-  categoryId: number;
-  manufacturerId: number;
-  price: number;
-  divisionId: number;
-}
