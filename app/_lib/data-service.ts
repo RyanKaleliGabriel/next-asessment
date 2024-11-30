@@ -82,3 +82,40 @@ export async function getShop(shopId: number): Promise<Shop | null> {
     throw error;
   }
 }
+
+export async function getShopStock() {
+  try {
+    const query = "";
+    const products = await getProducts(query);
+    const shops = await getShops(query);
+
+    //Group products by stock
+    const grouped = products.reduce((acc: any, product: Product) => {
+      if (!acc[product.shop_id]) {
+        acc[product.shop_id] = { totalStock: 0, shopId: product.shop_id };
+      }
+
+      acc[product.shop_id].totalStock += product.stock_level;
+      return acc;
+    }, {});
+
+    //Map stock data to include shop names
+    const shopStockData = Object.values(grouped).map((stock: any) => {
+      const shop = shops.find((s: Shop) => s.id === stock.shopId);
+      return {
+        shopName: shop?.name || "Unknown shop",
+        totalStock: stock.totalStock,
+      };
+    });
+
+    const sortedShops = shopStockData.sort(
+      (a, b) => b.totalStock - a.totalStock
+    );
+
+    const top5shops = sortedShops.slice(0,5);
+    return top5shops;
+  } catch (error: any) {
+    console.error("Failed to fetch shop stock");
+    throw error;
+  }
+}

@@ -104,7 +104,7 @@
       "photo": "4kmonitor.jpeg",
       "stock_level": 12,
       "price": 75000,
-      "shop_id": "1"
+      "shop_id": "ea52"
     },
     {
       "id": "11",
@@ -160,7 +160,7 @@
       "photo": "woolsweater.png",
       "stock_level": 18,
       "price": 10000,
-      "shop_id": "2"
+      "shop_id": "ea52"
     },
     {
       "id": "18",
@@ -264,7 +264,7 @@
       "photo": "iron.jpeg",
       "stock_level": 10,
       "price": 7000,
-      "shop_id": "3"
+      "shop_id": "ea52"
     }
   ],
   "profile": {
