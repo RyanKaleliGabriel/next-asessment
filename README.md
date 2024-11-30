@@ -15,7 +15,7 @@ Install the dependencies :
  npm install
 ```
 
-Create a .env file and add the base url of the json server:
+Create a .env file in the root directory and add the base url of the json server:
 
 ```bash
 BASE_URL=http://localhost:3001
